@@ -6,7 +6,8 @@ var server = require('http').Server(app);
 port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-    res.send("Hello World!!! Node Sample App is up and running!");
+    res.send("Hello World!!! Node Sample App is up and running! Can you see the image?");
+    res.send(document.write('<img src="leo_visions-sMPRCsoUM4A-unsplash.jpg'));
 });
 
 app.get('/ping', (req, res) => {
